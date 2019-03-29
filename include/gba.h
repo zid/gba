@@ -1,0 +1,38 @@
+
+#define DISPCNT *((volatile unsigned short *)0x04000000)
+#define BG0CNT  *((volatile unsigned short *)0x04000008)
+#define BG1CNT  *((volatile unsigned short *)0x0400000A)
+#define BG2CNT  *((volatile unsigned short *)0x0400000C)
+#define BG3CNT  *((volatile unsigned short *)0x0400000E)
+
+#define BG0HOFS *((volatile unsigned short *)0x04000010)
+#define BG0VOFS *((volatile unsigned short *)0x04000012)
+#define BG1HOFS *((volatile unsigned short *)0x04000014)
+#define BG1VOFS *((volatile unsigned short *)0x04000016)
+#define BG2HOFS *((volatile unsigned short *)0x04000018)
+#define BG2VOFS *((volatile unsigned short *)0x0400001A)
+#define BG3HOFS *((volatile unsigned short *)0x0400001C)
+#define BG3VOFS *((volatile unsigned short *)0x0400001E)
+
+
+#define BG2PA  *((volatile unsigned short *)0x04000020)
+#define BG2PB  *((volatile unsigned short *)0x04000022)
+#define BG2PC  *((volatile unsigned short *)0x04000024)
+#define BG2PD  *((volatile unsigned short *)0x04000026)
+#define BG2X_L  *((volatile unsigned short *)0x04000028)
+#define BG2X_H  *((volatile unsigned short *)0x0400002A)
+#define BG2Y_L  *((volatile unsigned short *)0x0400002C)
+#define BG2Y_H  *((volatile unsigned short *)0x0400002E)
+
+#define BG3PA  *((volatile unsigned short *)0x04000030)
+#define BG3PB  *((volatile unsigned short *)0x04000032)
+#define BG3PC  *((volatile unsigned short *)0x04000034)
+#define BG3PD  *((volatile unsigned short *)0x04000036)
+#define BG3X_L  *((volatile unsigned short *)0x04000038)
+#define BG3X_H  *((volatile unsigned short *)0x0400003A)
+#define BG3Y_L  *((volatile unsigned short *)0x0400003C)
+#define BG3Y_H  *((volatile unsigned short *)0x0400003E)
+
+#define PALETTE ((unsigned short *)0x05000000)
+#define VRAM    ((unsigned short *)0x06000000)
+#define MAP     ((unsigned short *)0x0600F800)
